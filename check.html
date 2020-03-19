@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <button onclick="check()">Find Broswer</button>
+    <script>
+
+    function check() { 
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+    {
+        alert('you are using opera browser');
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        alert('you are using chrome browser');
+    }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        alert('you are using safari browser');
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+         alert('you are using firefox browser');
+    }
+    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      alert('you are using internet explorer browser'); 
+    }  
+    else 
+    {
+       alert('unknown');
+    }
+    }
+    </script>
+
+    </body>
+    </html>
